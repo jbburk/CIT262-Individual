@@ -98,6 +98,7 @@ const Login = ({loggedInState, loggedInStates,setLoggedInState})=>{
               style={styles.loginButton}
               onPress={async ()=>{
                 console.log(phoneNumber+' Button was pressed')
+                console.log("Hello Josh")
     
                 const loginResponse=await fetch(
                   'https://dev.stedi.me/twofactorlogin',
