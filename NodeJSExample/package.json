@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "This is an example.",
   "main": "index.js",
-  "scripts": {
-    "hello":"node helloworld.js"
+  "dependencies": {
+    "mocha": "10.3.0"
   },
+  "scripts": {
+    "hello":"node helloworld.js",
+    "test": "mocha"
+  },
+  "type": "module",
   "author": "Joshua Burk",
   "license": "ISC"
 }
