@@ -1,10 +1,8 @@
-import assert from 'assert';
+import sayHello from '../utils/helloworld.mjs';
 
-const sayHello=()=>{
-    return "hello";
-}
-
-It("Hello", ()=>{
+It("Should say hello", ()=>{
     const hello = sayHello();
-    assert.equal(hello,"hello");
+    console.log(hello);
+
+    expect(hello).toBe("hello");
 })
